@@ -1,7 +1,8 @@
 package com.br.titoaesj.examplesoftest.di
 
-import com.br.titoaesj.examplesoftest.data.repository.JediRepository
+import com.br.titoaesj.examplesoftest.data.repository.JediRepositoryImpl
 import com.br.titoaesj.examplesoftest.data.api.StarWarsApi
+import com.br.titoaesj.examplesoftest.data.repository.JediRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -21,6 +22,6 @@ class ViewModelModule {
     @Provides
     @ViewModelScoped
     fun provideMainRepository(starWarsApi: StarWarsApi): JediRepository =
-        JediRepository(starWarsApi = starWarsApi)
+        JediRepositoryImpl(starWarsApi = starWarsApi)
 
 }

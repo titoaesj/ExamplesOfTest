@@ -7,9 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".ui.MainActivity">
 
-
-    \
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/characterRV"
         android:layout_width="0dp"
